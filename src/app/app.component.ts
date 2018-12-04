@@ -9,4 +9,11 @@ export class AppComponent {
   title = 'platziSquare';
   a= 3;
   b = 5;
+
+  listo = false;
+
+  constructor(){
+    setTimeout(()=>{this.listo=true},3000)
+  }
+
 }

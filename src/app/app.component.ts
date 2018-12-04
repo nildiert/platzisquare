@@ -15,5 +15,8 @@ export class AppComponent {
   constructor(){
     setTimeout(()=>{this.listo=true},3000)
   }
+  hacerAlgo(){
+    alert('Haciendo algo');
+  }
 
 }

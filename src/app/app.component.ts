@@ -8,9 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'platziSquare';
   lugares:any = [
-    {nombre: 'Veterinaria el becerro'},
-    {nombre: 'Floristeria, la pajita'},
-    {nombre: 'Donas el Nildiert'},
+    {active: true, nombre: 'Veterinaria el becerro'},
+    {active: true, nombre: 'Veterinaria el becerro'},
+    {active: true, nombre: 'Floristeria, la pajita'},
+    {active: false, nombre: 'Sushi el gamin'},
+    {active: true, nombre: 'Hotel la bendicion'},
+    {active: false, nombre: 'Zapateria el clavo'},
 
   ]
   constructor(){

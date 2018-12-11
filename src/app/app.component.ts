@@ -16,6 +16,8 @@ export class AppComponent {
     {active: false, nombre: 'Zapateria el clavo'},
 
   ]
+  lat:number = 4.613092;
+  lng:number = -74.1843277;
   constructor(){
   }
 

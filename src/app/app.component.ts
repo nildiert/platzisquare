@@ -7,16 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'platziSquare';
-  a= 3;
-  b = 5;
+  lugares:any = [
+    {nombre: 'Veterinaria el becerro'},
+    {nombre: 'Floristeria, la pajita'},
+    {nombre: 'Donas el Nildiert'},
 
-  listo = false;
-nombre:string ="";
+  ]
   constructor(){
-    setTimeout(()=>{this.listo=true},3000)
-  }
-  hacerAlgo(){
-    alert('Haciendo algo');
   }
 
 }
+ 

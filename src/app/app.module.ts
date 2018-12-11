@@ -10,11 +10,13 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {DetalleComponent} from "./detalle/detalle.component";
 import {Routes, RouterModule} from "@angular/router";
 import { LugaresComponent } from './lugares/lugares.component';
+import { ContactoComponent } from './contacto/contacto.comopnent';
 
 const appRoutes: Routes =[
   {path:'',component:LugaresComponent},
   {path:'lugares',component:LugaresComponent},
   {path:'detalle/:id',component:DetalleComponent},
+  {path:'contacto',component:ContactoComponent},
 
 ]
 
@@ -25,6 +27,7 @@ const appRoutes: Routes =[
     ContarClicksDirective,
     DetalleComponent,
     LugaresComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,

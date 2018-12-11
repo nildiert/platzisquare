@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
 export class LugaresComponent{
   title = 'platziSquare';
   lugares:any = [
-    {plan: 'pagado',cercania: 1, distancia: 1, active: true, nombre: 'Veterinaria el becerro'},
-    {plan: 'gratuito',cercania: 1, distancia: 1.8, active: true, nombre: 'Veterinaria el becerro'},
-    {plan: 'gratuito',cercania: 2, distancia: 5, active: true, nombre: 'Floristeria, la pajita'},
-    {plan: 'gratuito',cercania: 2, distancia: 10, active: false, nombre: 'Sushi el gamin'},
-    {plan: 'pagado',cercania: 3, distancia: 35, active: true, nombre: 'Hotel la bendicion'},
-    {plan: 'gratuito',cercania: 3, distancia: 120, active: false, nombre: 'Zapateria el clavo'},
+    {id:1 ,plan: 'pagado',cercania: 1, distancia: 1, active: true, nombre: 'Veterinaria el becerro'},
+    {id: 2,plan: 'gratuito',cercania: 1, distancia: 1.8, active: true, nombre: 'Veterinaria el becerro'},
+    {id: 3,plan: 'gratuito',cercania: 2, distancia: 5, active: true, nombre: 'Floristeria, la pajita'},
+    {id: 4,plan: 'gratuito',cercania: 2, distancia: 10, active: false, nombre: 'Sushi el gamin'},
+    {id: 5,plan: 'pagado',cercania: 3, distancia: 35, active: true, nombre: 'Hotel la bendicion'},
+    {id: 6,plan: 'gratuito',cercania: 3, distancia: 120, active: false, nombre: 'Zapateria el clavo'},
 
   ]
   lat:number = 4.613092;

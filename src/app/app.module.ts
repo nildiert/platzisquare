@@ -12,6 +12,9 @@ import {Routes, RouterModule} from "@angular/router";
 import { LugaresComponent } from './lugares/lugares.component';
 import { ContactoComponent } from './contacto/contacto.comopnent';
 import { LugaresService } from './contacto/services/lugares.service';
+import { environment } from '../environments/environment';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 const appRoutes: Routes =[
   {path:'',component:LugaresComponent},
@@ -38,6 +41,9 @@ const appRoutes: Routes =[
     }),
     BrowserAnimationsModule,
       RouterModule.forRoot(appRoutes),
+      AngularFireModule,
+      AngularFirestoreModule,
+      AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [LugaresService],
   bootstrap: [AppComponent]

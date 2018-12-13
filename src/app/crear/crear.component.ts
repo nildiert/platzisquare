@@ -12,8 +12,10 @@ export class CrearComponent{
 
   }
   guardarLugar(){
-    // this.lugaresService.guardarLugar(this.lugar);
+    this.lugar.id = Date.now();
     this.lugaresService.guardarLugar(this.lugar);
+    alert('Negocio guardado con exito');
+    this.lugar={};
   }
 
 }

@@ -10,17 +10,20 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {DetalleComponent} from "./detalle/detalle.component";
 import {Routes, RouterModule} from "@angular/router";
 import { LugaresComponent } from './lugares/lugares.component';
-import { ContactoComponent } from './contacto/contacto.comopnent';
-import { LugaresService } from './contacto/services/lugares.service';
+import { ContactoComponent } from './contacto/contacto.component';
+import { LugaresService } from './services/lugares.service';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireDatabaseModule } from'angularfire2/database';
+import { CrearComponent } from './crear/crear.component';
 
 const appRoutes: Routes =[
   {path:'',component:LugaresComponent},
   {path:'lugares',component:LugaresComponent},
   {path:'detalle/:id',component:DetalleComponent},
   {path:'contacto',component:ContactoComponent},
+  {path:'crear',component:CrearComponent},
 
 ]
 
@@ -32,6 +35,7 @@ const appRoutes: Routes =[
     DetalleComponent,
     LugaresComponent,
     ContactoComponent,
+    CrearComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +48,7 @@ const appRoutes: Routes =[
       AngularFireModule,
       AngularFirestoreModule,
       AngularFireModule.initializeApp(environment.firebase),
+      AngularFireDatabaseModule,
   ],
   providers: [LugaresService],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LugaresService } from '../contacto/services/lugares.service';
+import { LugaresService } from '../services/lugares.service';
 
 @Component({
   selector: 'app-lugares',
@@ -11,10 +11,9 @@ export class LugaresComponent{
   lat:number = 4.613092;
   lng:number = -74.1843277;
 
-  lugares = null;  
+  lugares = null;
   constructor(private lugaresService:LugaresService){
     this.lugares = lugaresService.getLugares();
-  } 
+  }
 
 }
- 
